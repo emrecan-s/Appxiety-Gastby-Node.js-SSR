@@ -1,36 +1,78 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Component } from 'react';
 
-const Header = ({ siteTitle }) => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
 
-      </h1>
-      <a href="https://github.com/saigowthamr/gatsbyblog-starter"
-        style={{ color: "white", float: "right" }} title="github" >Github</a>
-    </div>
-  </div>
-)
+class Header extends Component {
+ 
+  render() { 
+    return (
+      <React.Fragment>
+        <nav className="purple darken-3">
+          <div className="nav-wrapper">
+            <Link className="brand-logo" to="/">Appxiety</Link>
+            <a href="#" data-target="mobile-demo" className="sidenav-trigger">
+              <i className="material-icons">menu</i>
+            </a>
+            <ul className="right hide-on-med-and-down">
+              <li>
+            <Link
+            to="/main-blog">
+            Blog
+            </Link>
+              </li>
+              <li>
+                 <Link
+            to="/aboutus">
+            About Us
+            </Link>
+              </li>
+              <li>
+                 <Link
+            to="/faq">
+            FAQ
+            </Link>
+              </li>
+              <li>
+                 <Link
+            to="/contactUs">
+            Contact Us
+            </Link>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-export default Header
+        <ul className="sidenav" id="mobile-demo">
+          
+          <li>
+             <Link
+            to="/aboutus">
+            About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+            to="/aboutus">
+            About Us
+            </Link>
+          </li>
+          <li>
+             <Link
+            to="/aboutus">
+            About Us
+            </Link>
+          </li>
+        </ul>
+
+        
+      </React.Fragment>
+    );
+  }
+}
+
+
+
+
+export default Header;
+
