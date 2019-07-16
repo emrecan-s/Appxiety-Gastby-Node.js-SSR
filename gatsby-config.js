@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Appxiety',
-    siteUrl: 'https://appxiety-web1.herokuapp.com/
+    siteUrl: 'https://needstobetheproductionurl.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
