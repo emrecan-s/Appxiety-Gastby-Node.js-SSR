@@ -4,6 +4,14 @@ module.exports = {
     siteUrl: 'https://needstobetheproductionurl.com'
   },
   plugins: [
+  {
+    resolve: "gatsby-plugin-react-svg",
+    options: {
+      rule: {
+        include: /icons/ // See below to configure properly
+      }
+    }
+  },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,

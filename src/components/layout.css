@@ -24,3 +24,9 @@
 .faq ul li div:target {
     display:block;
 }
+
+.page-footer {
+    color: #6a1b9a !important;
+    background-color: #fff !important;
+    text-align: center !important;
+  }
