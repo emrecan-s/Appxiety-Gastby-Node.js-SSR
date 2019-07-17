@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { Component } from 'react';
-import M from 'materialize-css/dist/js/materialize.js';
 import  Menu from './../images/icons/menu.svg';
 
 class Header extends Component {
  componentDidMount() {
+ 	import M from 'materialize-css/dist/js/materialize.js';
 var elem = document.querySelector(".sidenav");
         var instance = M.Sidenav.init(elem, {
             edge: "left",
