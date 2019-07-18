@@ -5,7 +5,7 @@ import  Menu from './../images/icons/menu.svg';
 
 class Header extends Component {
  componentDidMount() {
- 	import M from 'materialize-css/dist/js/materialize.js';
+ 	const M = require ("materialize-css/dist/js/materialize.js");
 var elem = document.querySelector(".sidenav");
         var instance = M.Sidenav.init(elem, {
             edge: "left",
